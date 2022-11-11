@@ -36,7 +36,7 @@ class Hero extends React.Component {
                             </button>
 
                             <div>
-                                <a class="text-2xl font-bold text-gray-800 transition-colors duration-300 transform lg:text-3xl hover:text-blue-700" href="#">KTP Northwestern</a>
+                                <a class="hidden md:inline text-2xl font-bold text-gray-800 transition-colors duration-300 transform lg:text-3xl hover:text-blue-700" href="#">KTP Northwestern</a>
                             </div>
                         </div>
                         <div class={(this.state.isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0") + "h-0 absolute inset-x-0 z-20 w-full px-6 py-8 mt-8 space-y-6 transition-all duration-300 ease-in-out bg-white top-16 md:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:space-y-0 md:-mx-6 md:flex md:items-center"}>
