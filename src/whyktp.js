@@ -28,7 +28,7 @@ class WhyKTP extends React.Component {
                                     <h1 class="text-2xl font-semibold text-gray-700 capitalize">Professional Development</h1>
 
                                     <p class="mt-3 text-gray-500">
-                                        we got cracked ppl who will get you in a zoom call with zuck. im adding more text so it fills up the space
+                                    KTP's extensive network of upperclassmen and alumni as well as a unique blend of professional, academic, and social events help members explore and develop their careers.
                                     </p>
                                 </div>
                             </div>
