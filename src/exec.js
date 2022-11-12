@@ -77,7 +77,7 @@ class Execs extends React.Component {
 
                             <h1 class="mt-4 text-xl md:text-2xl font-semibold text-gray-700 truncate capitalize group-hover:text-white">Sneh Deshpande</h1>
 
-                            <p class="mt-2 text-gray-500 text-sm md:text-2xl capitalize truncate group-hover:text-gray-300">VP of External Affairs</p>
+                            <p class="mt-2 text-gray-500 text-sm md:text-base capitalize truncate group-hover:text-gray-300">VP of External Affairs</p>
 
                             <div class="flex mt-3 -mx-2">
 
