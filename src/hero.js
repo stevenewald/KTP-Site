@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-import classNames from "classnames";
 
 
 
@@ -67,7 +66,7 @@ class Hero extends React.Component {
                             </h1>
 
                             <p class="max-w-3xl mx-auto mt-6 text-lg text-center text-gray-700 md:text-xl">
-                                Want to join Northwestern's premiere co-ed technology fraternity?
+                                Join Northwestern's premiere co-ed technology fraternity
                             </p>
 
                             <div class="flex flex-col mt-8 space-y-3 sm:-mx-2 sm:flex-row sm:justify-center sm:space-y-0">
