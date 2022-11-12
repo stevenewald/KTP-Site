@@ -16,9 +16,9 @@ class Execs extends React.Component {
                         <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
                             <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://media-exp1.licdn.com/dms/image/C4E03AQEhnMuPtE0eGw/profile-displayphoto-shrink_400_400/0/1657907779939?e=1673481600&v=beta&t=zzQDOTfwH6lSA2KyoKvno6OdgWaUXEk_PIgJjUlRSwk" alt=""></img>
 
-                            <h1 class="mt-4 text-2xl font-semibold text-gray-700 truncate capitalize group-hover:text-white">samar saleem</h1>
+                            <h1 class="mt-4 text-xl md:text-2xl font-semibold text-gray-700 truncate capitalize group-hover:text-white">samar saleem</h1>
 
-                            <p class="mt-2 text-gray-500 capitalize truncate group-hover:text-gray-300">founder and president</p>
+                            <p class="mt-2 text-sm md:text-base text-gray-500 capitalize truncate group-hover:text-gray-300">founder and president</p>
 
                             <div class="flex mt-3 -mx-2">
                                 <a href="#" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Instagram">
@@ -46,9 +46,9 @@ class Execs extends React.Component {
                         <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
                             <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://media-exp1.licdn.com/dms/image/C5603AQEtz1wN1PeAmw/profile-displayphoto-shrink_400_400/0/1624822282607?e=1673481600&v=beta&t=tk5OdILOA4zFcJedNbbwLm0K2U5jJ3MnSn8NzRAk65g" alt=""></img>
 
-                            <h1 class="mt-4 text-2xl font-semibold truncate text-gray-700 capitalize group-hover:text-white">Nam Nguyen</h1>
+                            <h1 class="mt-4 text-xl md:text-2xl font-semibold truncate text-gray-700 capitalize group-hover:text-white">Nam Nguyen</h1>
 
-                            <p class="mt-2 text-gray-500 capitalize truncate group-hover:text-gray-300">VP of Internal Affairs</p>
+                            <p class="mt-2 text-gray-500 text-sm md:text-base capitalize truncate group-hover:text-gray-300">VP of Internal Affairs</p>
 
                             <div class="flex mt-3 -mx-2">
 
@@ -75,9 +75,9 @@ class Execs extends React.Component {
                         <div class="flex flex-nowrap flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
                             <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://media-exp1.licdn.com/dms/image/C4D03AQEVH1jm84ax0A/profile-displayphoto-shrink_400_400/0/1649042616875?e=1673481600&v=beta&t=26U63ZV9nu7PlxeINdXmmqxH2ihM6_CrHkYoFfGhgcw" alt=""></img>
 
-                            <h1 class="mt-4 text-2xl font-semibold text-gray-700 truncate capitalize group-hover:text-white">Sneh Deshpande</h1>
+                            <h1 class="mt-4 text-xl md:text-2xl font-semibold text-gray-700 truncate capitalize group-hover:text-white">Sneh Deshpande</h1>
 
-                            <p class="mt-2 text-gray-500 capitalize truncate group-hover:text-gray-300">VP of External Affairs</p>
+                            <p class="mt-2 text-gray-500 text-sm md:text-2xl capitalize truncate group-hover:text-gray-300">VP of External Affairs</p>
 
                             <div class="flex mt-3 -mx-2">
 
@@ -104,9 +104,9 @@ class Execs extends React.Component {
                         <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
                             <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://media-exp1.licdn.com/dms/image/C5603AQE7b12wJDGvtg/profile-displayphoto-shrink_100_100/0/1648564209595?e=1673481600&v=beta&t=rvYlEBkQU1835jg3eGD6KDGJhqHRrggAQFU-Ex48b0k" alt=""></img>
 
-                            <h1 class="mt-4 text-2xl font-semibold text-gray-700 truncate capitalize group-hover:text-white">Josh Brice</h1>
+                            <h1 class="mt-4 text-xl md:text-2xl font-semibold text-gray-700 truncate capitalize group-hover:text-white">Josh Brice</h1>
 
-                            <p class="mt-2 text-gray-500 capitalize truncate group-hover:text-gray-300">VP of Member Development</p>
+                            <p class="mt-2 text-gray-500 text-sm md:text-base capitalize text-center sm:truncate group-hover:text-gray-300">VP of Member Development</p>
 
                             <div class="flex mt-3 -mx-2">
                                 <a href="#" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Instagram">
