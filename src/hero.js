@@ -1,8 +1,13 @@
 import React from 'react';
 import './index.css';
+import axios from 'axios';
 
 
-
+const validateEmail = (email) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
 class Hero extends React.Component {
     constructor() {
         super();
@@ -12,6 +17,15 @@ class Hero extends React.Component {
 
     changeOpen() {
         this.setState({isOpen:!this.state.isOpen});
+    }
+
+    async handleEmail(newEmail) {
+        if(validateEmail(newEmail)) {
+            console.log("Email " + newEmail + " validated, posting...");
+            await axios.post("https://ktpnu.com/express/userLogin", { email: newEmail });
+        } else {
+            alert("Invalid email");
+        }
     }
     render() {
         return (
@@ -70,9 +84,9 @@ class Hero extends React.Component {
                             </p>
 
                             <div class="flex flex-col mt-8 space-y-3 sm:-mx-2 sm:flex-row sm:justify-center sm:space-y-0">
-                                <input id="email" type="text" class="px-6 py-3 text-gray-700 bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring sm:mx-2" placeholder="Email Address" />
+                                <input id="email" type="email" class="px-6 py-3 text-gray-700 bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring sm:mx-2" placeholder="Email Address" />
 
-                                <button class="px-8 py-3 text-sm font-medium tracking-wide text-white transform capitalize transition-colors duration-300 bg-blue-500 rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none sm:mx-2">
+                                <button onClick={() => this.handleEmail(document.getElementById("email").value)} class="px-8 py-3 text-sm font-medium tracking-wide text-white transform capitalize transition-colors duration-300 bg-blue-500 rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none sm:mx-2">
                                     Notify Me
                                 </button>
                             </div>
