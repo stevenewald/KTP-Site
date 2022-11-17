@@ -1,6 +1,9 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link'
 import './index.css';
-
+// Use HashLink to route to same reference in page <Link>
+// Use anchor tag <a> to reference interest form 
 
 
 class Hero extends React.Component {
@@ -15,7 +18,8 @@ class Hero extends React.Component {
     }
     render() {
         return (
-            <section class="w-full min-h-screen bg-white bg-cover bg-full bg-no-repeat" style={{backgroundImage:"url(https://ktpmichigan.com/assets/img/home/landing.png)",backgroundPosition:"0 25px"}}>
+            <BrowserRouter>
+            <section class="w-full min-h-screen bg-white bg-cover bg-full bg-no-repeat" style={{backgroundImage:"url(https://ktpmichigan.com/assets/img/home/landing.png)",backgroundPosition:"0 25px"}} id='Home'>
                 <div class="container relative flex flex-col min-h-screen px-6 py-8 mx-auto">
                     <nav class="md:flex md:items-center md:justify-between">
                         <div class="flex items-center justify-between">
@@ -35,18 +39,18 @@ class Hero extends React.Component {
                             </button>
 
                             <div>
-                                <a class="hidden md:inline text-2xl font-bold text-gray-800 transition-colors duration-300 transform lg:text-3xl hover:text-blue-700" href="#">KTP Northwestern</a>
+                            <Link to='#Home'><a class="hidden md:inline text-2xl font-bold text-gray-800 transition-colors duration-300 transform lg:text-3xl hover:text-blue-700" href="#">KTP Northwestern</a></Link>
                             </div>
                         </div>
                         <div class={(this.state.isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0") + "h-0 absolute inset-x-0 z-20 w-full px-6 pt-8 pb-6 md:pb-8 mt-8 space-y-6 transition-all duration-300 ease-in-out bg-white top-16 md:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-y-0 -translate-y-10 md:translate-x-0 md:space-y-0 md:-mx-6 md:flex md:items-center"}>
-                            <a href="#" class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Home</a>
-                            <a href="#" class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Benefits</a>
+                            <Link to='#Home'><a href="#" class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Home</a></Link>
+                            <Link to='#Benefits'><a class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Benefits</a></Link>
                             <a href="#" class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Rush</a>
-                            <a href="#" class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Members</a>
+                            <Link to='#Members'><a class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Members</a></Link>
 
                             <button class="w-full p-4 transition-colors duration-300 bg-gray-100 rounded-md md:w-auto md:mx-6 hover:bg-gray-200">
                                 <div class="flex items-center justify-center -mx-1">
-                                    <p class="mx-1 text-sm text-gray-600 truncate">Interest form</p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSedn1BbSMD1hSGXrHUFSchFFzmXtoK8kz8-ATIKnIgka5HSug/viewform?vc=0&c=0&w=1&flr=0" target='_blank'><p class="mx-1 text-sm text-gray-600 truncate">Interest form</p></a>
 
                                     <svg clip-rule="evenodd" class="w-6 h-6 mx-1 fill-gray-600" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm13.5 10.75c0-.414-.336-.75-.75-.75h-4.5c-.414 0-.75.336-.75.75s.336.75.75.75h4.5c.414 0 .75-.336.75-.75zm-11.772-.537 1.25 1.114c.13.116.293.173.455.173.185 0 .37-.075.504-.222l2.116-2.313c.12-.131.179-.296.179-.459 0-.375-.303-.682-.684-.682-.185 0-.368.074-.504.221l-1.66 1.815-.746-.665c-.131-.116-.293-.173-.455-.173-.379 0-.683.307-.683.682 0 .188.077.374.228.509zm11.772-2.711c0-.414-.336-.75-.75-.75h-4.5c-.414 0-.75.336-.75.75s.336.75.75.75h4.5c.414 0 .75-.336.75-.75zm-11.772-1.613 1.25 1.114c.13.116.293.173.455.173.185 0 .37-.074.504-.221l2.116-2.313c.12-.131.179-.296.179-.46 0-.374-.303-.682-.684-.682-.185 0-.368.074-.504.221l-1.66 1.815-.746-.664c-.131-.116-.293-.173-.455-.173-.379 0-.683.306-.683.682 0 .187.077.374.228.509zm11.772-1.639c0-.414-.336-.75-.75-.75h-4.5c-.414 0-.75.336-.75.75s.336.75.75.75h4.5c.414 0 .75-.336.75-.75z"/></svg>
                                 </div>
@@ -94,6 +98,7 @@ class Hero extends React.Component {
                     </footer>
                 </div>
             </section>
+            </BrowserRouter>
         )
     }
 }

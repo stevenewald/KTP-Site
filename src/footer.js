@@ -9,7 +9,7 @@ class Footer extends React.Component {
                 <p class="text-sm text-gray-600">© Copyright 2022. All Rights Reserved.</p>
 
                 <div class="flex -mx-2">
-                    <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500" aria-label="Instagram">
+                    <a href="https://www.instagram.com/ktpnorthwestern/?next=%2F" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500" aria-label="Instagram">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -18,7 +18,7 @@ class Footer extends React.Component {
                         </svg>
                     </a>
 
-                    <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500" aria-label="Linkedin">
+                    <a href="https://www.linkedin.com/company/kappa-theta-pi-northwestern/" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500" aria-label="Linkedin">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
