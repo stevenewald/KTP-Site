@@ -1,9 +1,8 @@
 import React from 'react';
-import './index.css';
-
-
+import '../index.css';
 
 class Hero extends React.Component {
+
     constructor() {
         super();
         this.state = {isOpen:false};
@@ -38,7 +37,7 @@ class Hero extends React.Component {
                                 <a class="hidden md:inline text-2xl font-bold text-gray-800 transition-colors duration-300 transform lg:text-3xl hover:text-blue-700" href="#">KTP Northwestern</a>
                             </div>
                         </div>
-                        <div class={(this.state.isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0") + "h-0 absolute inset-x-0 z-20 w-full px-6 pt-8 pb-6 md:pb-8 mt-8 space-y-6 transition-all duration-300 ease-in-out bg-white top-16 md:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-y-0 -translate-y-10 md:translate-x-0 md:space-y-0 md:-mx-6 md:flex md:items-center"}>
+                        <div class={(this.state.isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0") + "h-0 absolute inset-x-0 z-20 w-full px-6 pt-8 pb-6 mt-8 space-y-6 transition-all duration-300 ease-in-out bg-white top-16 md:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-y-0 -translate-y-10 md:translate-x-0 md:space-y-0 md:-mx-6 md:flex md:items-center"}>
                             <a href="#" class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Home</a>
                             <a href="#" class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Benefits</a>
                             <a href="#" class="block text-gray-600 transition-colors duration-300 md:px-6 hover:text-blue-500">Rush</a>
@@ -86,9 +85,7 @@ class Hero extends React.Component {
 
                         <div class="mt-4 -mx-4 md:mt-0">
                             <a href="#" class="px-4 text-gray-700 transition-colors duration-300 hover:text-blue-500"></a>
-
                             <a href="#" class="px-4 text-gray-700 transition-colors duration-300 hover:text-blue-500 hidden">Instagram</a>
-
                             <a href="#" class="px-4 text-gray-700 transition-colors duration-300 hover:text-blue-500 hidden">LinkedIn</a>
                         </div>
                     </footer>
