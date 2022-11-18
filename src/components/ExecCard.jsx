@@ -1,9 +1,17 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
-function ExecCard({name, role, imgsrc, instagram, linkedin}) {
+function ExecCard({name, role, imgsrc, instagram, linkedin, delay}) {
+
+  delay = parseFloat(delay);
+
   return (
     <>
-      <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group hover:bg-blue-600">
+      <motion.div class="flex flex-col items-center p-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group hover:bg-blue-600"
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ delay: delay }}
+        viewport={{ once: true }}>
         <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src={imgsrc} alt=""></img>
           <h1 class="mt-4 text-xl md:text-2xl font-semibold text-gray-700 truncate group-hover:text-white">{name}</h1>
           <p class="mt-2 text-sm md:text-base text-gray-500 truncate group-hover:text-gray-300">{role}</p>
@@ -27,7 +35,7 @@ function ExecCard({name, role, imgsrc, instagram, linkedin}) {
             </svg>
           </a>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

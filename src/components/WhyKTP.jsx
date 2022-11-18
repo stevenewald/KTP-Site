@@ -60,7 +60,7 @@ class WhyKTP extends React.Component {
                                     <h1 class="text-2xl font-semibold text-gray-700 capitalize">CS-Focused Events</h1>
 
                                     <p class="mt-3 text-gray-500">
-                                    text text text text text text text text text text text text text text text text text text text text text text text text 
+                                    text text text text text text text text text text text text text text text text text text text text text text text text
                                     </p>
                                 </div>
                             </div>

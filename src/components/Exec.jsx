@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import ExecCard from './ExecCard.jsx'
+import { motion } from 'framer-motion'
 
 class Execs extends React.Component {
     render() {
@@ -14,7 +15,10 @@ class Execs extends React.Component {
                     </p>
 
                     {/* Solo Section for President */}
-                    <div class="flex justify-center">
+                    <motion.div class="flex justify-center"
+                      initial={{ x: -50, opacity: 0 }}
+                      whileInView={{ x: 0, opacity: 1 }}
+                      viewport={{ once: true }}>
                       <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border sm:w-4/5 md:w-3/6 lg:w-1/4 rounded-xl hover:border-transparent group hover:bg-blue-600">
                         <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://media-exp1.licdn.com/dms/image/C4E03AQEhnMuPtE0eGw/profile-displayphoto-shrink_400_400/0/1657907779939?e=1673481600&v=beta&t=zzQDOTfwH6lSA2KyoKvno6OdgWaUXEk_PIgJjUlRSwk" alt=""></img>
                           <h1 class="mt-4 text-xl md:text-2xl font-semibold text-gray-700 truncate group-hover:text-white">Samar Saleem</h1>
@@ -36,7 +40,7 @@ class Execs extends React.Component {
                           </a>
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
 
                     <div class="grid grid-cols-2 gap-8 mt-8 lg:grid-cols-4">
 
@@ -44,42 +48,50 @@ class Execs extends React.Component {
                                   role="VP of Internal Affairs"
                                   imgsrc="https://media-exp1.licdn.com/dms/image/C5603AQEtz1wN1PeAmw/profile-displayphoto-shrink_400_400/0/1624822282607?e=1673481600&v=beta&t=tk5OdILOA4zFcJedNbbwLm0K2U5jJ3MnSn8NzRAk65g"
                                   instagram="https://www.instagram.com/namnguyen0412/"
-                                  linkedin="https://www.linkedin.com/in/nhat-nam-nguyen-96454b156/"/>
+                                  linkedin="https://www.linkedin.com/in/nhat-nam-nguyen-96454b156/"
+                                  delay="0.05"/>
                         <ExecCard name="Sneh Deshpande"
                                   role="VP of External Affairs"
                                   imgsrc="https://media-exp1.licdn.com/dms/image/C4D03AQEVH1jm84ax0A/profile-displayphoto-shrink_400_400/0/1649042616875?e=1673481600&v=beta&t=26U63ZV9nu7PlxeINdXmmqxH2ihM6_CrHkYoFfGhgcw"
                                   instagram="https://www.instagram.com/snehdeshpande/"
-                                  linkedin="https://www.linkedin.com/in/snehdeshpande/"/>
+                                  linkedin="https://www.linkedin.com/in/snehdeshpande/"
+                                  delay="0.1"/>
                         <ExecCard name="Josh Brice"
                                   role="VP of Member Dev."
                                   imgsrc="https://media-exp1.licdn.com/dms/image/C5603AQE7b12wJDGvtg/profile-displayphoto-shrink_100_100/0/1648564209595?e=1673481600&v=beta&t=rvYlEBkQU1835jg3eGD6KDGJhqHRrggAQFU-Ex48b0k"
                                   instagram="https://www.instagram.com/goodeveningmrbrice/"
-                                  linkedin="https://www.linkedin.com/in/josh-brice/"/>
+                                  linkedin="https://www.linkedin.com/in/josh-brice/"
+                                  delay="0.15"/>
                         <ExecCard name="Damien Koh"
                                   role="VP of Member Dev."
                                   imgsrc="https://media-exp1.licdn.com/dms/image/C5603AQGjHa8RFpDKhA/profile-displayphoto-shrink_400_400/0/1656946309926?e=1674086400&v=beta&t=5Ppx66YZp7JFL_Yloz0dBRLf3PL2c8_t4bRB9n12MCQ"
                                   instagram="https://www.instagram.com/damiennkoh/"
-                                  linkedin="https://www.linkedin.com/in/damien-tze-in-koh/"/>
+                                  linkedin="https://www.linkedin.com/in/damien-tze-in-koh/"
+                                  delay="0.2"/>
                         <ExecCard name="Steve Ewald"
                                   role="VP of Technology"
                                   imgsrc="https://media-exp1.licdn.com/dms/image/C4D03AQHPxYjOagRJig/profile-displayphoto-shrink_400_400/0/1649132175326?e=1674086400&v=beta&t=nArWnP-Mwa-_Gcr-r-pHuhtl97r7tG5dZzlfCh4D3Pc"
                                   instagram="https://www.instagram.com/stevenewald/"
-                                  linkedin="https://www.linkedin.com/in/steven-ewald/"/>
+                                  linkedin="https://www.linkedin.com/in/steven-ewald/"
+                                  delay="0.05"/>
                         <ExecCard name="Alexis Robles"
                                   role="VP of Technology"
                                   imgsrc="https://media-exp1.licdn.com/dms/image/C4E03AQHxKbf9gRhDYw/profile-displayphoto-shrink_400_400/0/1660923581630?e=1674086400&v=beta&t=xpu4AmKRflfjxMDXf5lzqPM_bEqCZ1lRiVTlzKjr6Pk"
                                   instagram="https://www.instagram.com/al3xisrobles/"
-                                  linkedin="https://www.linkedin.com/in/alexisdrobles/"/>
+                                  linkedin="https://www.linkedin.com/in/alexisdrobles/"
+                                  delay="0.1"/>
                         <ExecCard name="Eagen Notokusumo"
                                   role="VP of Finance"
                                   imgsrc="https://media-exp1.licdn.com/dms/image/C4D03AQEX-pJelYP9lQ/profile-displayphoto-shrink_400_400/0/1642469910535?e=1674086400&v=beta&t=6XmbJ70G__jLFuk9d_-55PM-8MiwshNsGCbSgGccoKU"
                                   instagram="https://www.instagram.com/r.eagan5/"
-                                  linkedin="https://www.linkedin.com/in/eagan-notokusumo/"/>
+                                  linkedin="https://www.linkedin.com/in/eagan-notokusumo/"
+                                  delay="0.15"/>
                         <ExecCard name="Julie Park"
                                   role="VP of Marketing"
                                   imgsrc="https://media-exp1.licdn.com/dms/image/D5603AQEBI1G8tDtQFQ/profile-displayphoto-shrink_400_400/0/1665165121633?e=1674086400&v=beta&t=ACMPKcTtGa10DFyCTdIR7u9W2XGX4vCxZNO6fq8gvwo"
                                   instagram="https://www.instagram.com/julieeppark/"
-                                  linkedin="https://www.linkedin.com/in/julieeppark/"/>
+                                  linkedin="https://www.linkedin.com/in/julieeppark/"
+                                  delay="0.2"/>
 
                     </div>
                 </div>
