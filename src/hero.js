@@ -57,8 +57,8 @@ class Hero extends React.Component {
                     <section class="flex items-center flex-1 mb-80 lg:mb-64">
                         <div class="flex flex-col w-full ">
                             <h1 class="text-5xl font-extrabold text-center lg:text-7xl 2xl:text-8xl">
-                                <span class="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500 pr-8">
-                                    Rush
+                                <span class="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500">
+                                    Rush&nbsp;
                                 </span>
                                 <span class="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500">
                                     KTP
